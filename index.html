@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 
 <body>
-   	<header class="container  intro">
+   	<header class="container">
         <h1>TROY STUMP</h1>
         <article><strong>Software Engineer</strong> specializing in <strong>iOS Development</strong>. Currently making apps at <strong><a href="http://phunware.com">Phunware</a></strong>.
         <p>Find me at:</p>
@@ -20,8 +20,9 @@
     </header>
 
 <section class="container project">
+
 	   <img
-         srcset="/img/project-2thrive_large.png 1920w,
+            srcset="/img/project-2thrive_large.png 1920w,
 	           /img/project-2thrive_med.png 960w,
 	           /img/project-2thrive_small.png 480w"
 		  src="/img/project-2thrive_med.png"
@@ -33,7 +34,12 @@
         <p>Availalbe on iPhone &amp; iPad: itunes<a href="#">link</a></p>
     </article>
 </section>
-<section class="container project">
+<section class="container code">
+      <article>
+            <h3>Code Snippet: Bitwise Operations</h3>
+        <p>The objective here was to fetch an operation code from the emulator’s stack of bytes, so that it could be successfully decoded at a later time.</p>
+        <p>Full project: <a href="#">link</a></p>
+    </article>
     <code>
 void Fetch(word* opCode)
 {
@@ -46,17 +52,7 @@ void Fetch(word* opCode)
         interpreter.pc += INCREMENT_PC ;
         }
     </code>
-
-    <article>
-            <h2>Code Snippt: Bitwise Operations</h2>
-        <p>Short description of above code.</p>
-        <p>Full project: <a href="#">link</a></p>
-    </article>
 </section>
-    <!-- footer -->
-    <footer class="container" id="footer">
-        <small>a little footer text</small>
-    </footer>
 
 	</body>
 </html>
