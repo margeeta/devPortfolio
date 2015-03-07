@@ -1,20 +1,14 @@
 /* fine imports __________________ */
 @import url(/css/normalize.css);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900|Source+Code+Pro:500);
-
 /* body __________________________ */
-
 html, body {
 	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1.6rem;
     font-size: 1.2rem;
 	color: #3d3d3d;
-	text-rendering: optimizeLegibility;
-	font-smooth:always;
-	-webkit-font-smoothing: subpixel-antialiased;
     background: #f1f2e8;
 	}
-
 /* links __________________________ */
 a {
 	text-decoration:none;
@@ -24,23 +18,20 @@ a {
 	}
 a:link {
     -webkit-tap-highlight-color: #3e950f;
-    -webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	transition: 0.5s; }
+    -webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s; }
 a:visited { color:#fff;}
 a:hover{ color: #fff;}
-
 /* typography __________________________ */
-
-h1, h2, h3, h4, h5, h6 { }
 h1 {
     color: #fff;
     font-size: 4rem;
     line-height: 0.9em;
-    margin-bottom: 2rem;
     padding-bottom: 1.5rem;
+    margin: 0 0 2rem;
     border-bottom: 0.4rem solid #fff;
-    width: 80%;
+    width: 14rem;
     }
 h2 {
     font-size: 1.2rem;
@@ -50,17 +41,12 @@ h3 {
     font-size: 1rem;
     line-height: .9em;
     }
-ol { list-style-type: decimal;}
 ul { margin-left: -2rem; }
     li {
         display: inline;
         padding-right: 1rem;
-    }
-p { }
+        }
 em, small { font-size: 0.8rem; }
-ins { }
-mark {  }
-blockquote, q { }
 pre, code, kbd, samp {
     font-family: 'Source Code Pro';
     display: block;
@@ -69,81 +55,29 @@ pre, code, kbd, samp {
     line-height: 2rem;
     font-size: 0.8rem;
     }
-strong { font-weight: bold; }
-details {}
-figcaption {}
-summary {}
-
 /* layout __________________________ */
-main { }
 header {
     padding: 6rem 2rem 1rem;
     background: #58da11;
     }
-
-hgroup {}
-menu {}
-nav {}
-section {
-    background-color: #e7e8de;
-    margin: 2rem auto;
-    }
+section { margin: 2rem auto; }
+section.project { background: #e7e8de; }
 .project article {padding: 2rem; }
-.code article {padding: 2rem 2rem 0; }
-aside {}
-figure {}
-footer { padding: 2rem; background: #58da11; }
-@media screen and (min-width: 950px) {
-    section {width: 70%;}
- }
+@media screen and (min-width: 700px) {
+    h1 { float: left; }
+    header { padding: 5rem 0 2rem 0; }
+    header article { width: 40%; float: right;}
+     section {width: 70%;}
     }
-@media screen and (min-width: 900px) {
-
-    }
-/* forms __________________________ */
-form {}
-fieldset { border: 0;}
-legend, label {font-weight: bold;}
-input, input[type="search"], textarea { padding: 0.4rem;}
-input[type="checkbox"] {}
-input[type="radio"] {}
-button, input[type="button"], input[type="reset"], input[type="submit"],button {
-	padding: 0.6rem 2rem;
-	font-size: 1em;
-	font-weight: bold;
-	color: #2ce2b1;
-    border: 0;
-    background: #eee;
-	}
-button:hover { background: #2ce2b1; color: #eee; }
-
 /* media __________________________ */
-img {  }
-.cover {object-fit: cover; }
-audio {}
-canvas {}
-progress {}
+img { padding-bottom: 0.2rem;}
+@media screen and (min-width: 900px) {
+   img { float: left; padding: 0 1rem 0 0;}
+ }
 video {}
-
 /* more __________________________ */
 .container:after {
   content:"";
   display:table;
   clear:both;
 }
-
-
-/* let's be repsonsive (mobile first- move up when done editing)__________________________ */
-@media screen and (min-width: 480px) {
-
-    }
-@media screen and (min-width: 900px) {
-
-    }
-
-/* print is dead __________________________
-
-@media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
-a, a:visited { color: #444 !important; text-decoration: underline; } a[href]:after { content: " (" attr(href) ")"; }
-abbr[title]:after { content: " (" attr(title) ")"; } .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } pre, blockquote { border: 1px solid #999; page-break-inside: avoid; } thead { display: table-header-group; } tr, img { page-break-inside: avoid; } @page { margin: 0.5cm; } p, h2, h3 { orphans: 3; widows: 3; } h2, h3{ page-break-after: avoid; }
-*/
